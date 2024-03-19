@@ -2,12 +2,12 @@
 """
 0-async_generator.py
 """
-from typing import AsyncGenerator
+from typing import Generator
 import random
 import asyncio
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> Generator[float, None, None]:
     """
     Loops 10 times, each time asynchronously wait 1 second,
     then yields a random number between 0 and 10
